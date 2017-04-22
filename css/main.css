@@ -177,14 +177,28 @@ aside {
      margin-right: -400px;
 }
 
-p.description {
-  font-size: 16px;
+p.tagline {
+  font-size: 18px;
   font-weight: 300;
     line-height: 1.5;
   color: #666;
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
+}
+
+p.features {
+  font-size: 14px;
+  font-weight: 300;
+    line-height: 1.5;
+  color: #666;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.appstore {
+  margin-top: 20px;
 }
 
 .button {
@@ -200,15 +214,33 @@ p.description {
     padding-bottom: 8px;
 
     margin-top: 20px;
-margin-bottom: 20px;
+/*margin-bottom: 20px;*/
 
     font-size: 16px;
     font-weight: 300;
 }
 
+.button-copy {
+  margin-top: 0px;
+  color: #444;
+  font-size: 10px;
+  font-weight: 300;
+}
+
 .button:hover {
   /*font-weight: 400;*/
   box-shadow: 1px 3px 3px 0px rgba(34, 34, 34, 0.2);
+}
+
+.links {
+  margin-top: 20px;
+  margin-top: 10px;
+}
+
+.presskit {
+  color: #49A8F3;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 footer a {
@@ -217,6 +249,8 @@ footer a {
   font-size: 16px;
   font-weight: 300;
   text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 footer a:hover {
