@@ -57,12 +57,12 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px Helvetica Neue, Helvetica, Arial;
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+    /*width: 90%;*/
+    /*margin: 0 5%;*/
 }
 
 /* ===================
@@ -75,17 +75,17 @@ body {
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    /*border-top: 20px solid #e44d26;*/
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    /*background: #f16529;*/
 }
 
 .title {
-    color: white;
+    /*color: white;*/
 }
 
 /* ==============
@@ -129,17 +129,21 @@ nav a:hover {
 }
 
 .main article h1 {
-    font-size: 2em;
+  font-size: 50px;
+  font-weight: 100;
+  margin-top: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 .main aside {
     color: white;
-    padding: 0px 5% 10px;
+    /*padding: 0px 5% 10px;*/
 }
 
 .footer-container footer {
-    color: white;
-    padding: 20px 0;
+    /*color: #222;*/
+    padding: 10px 0;
+    background-color: #49A8F3;
 }
 
 /* ===============
@@ -156,15 +160,68 @@ nav a:hover {
 
 
 
+article {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
+aside {
+      overflow: hidden;
+}
 
+.screenshot {
+  /*overflow: hidden;*/
+  max-width: 896px;
+    max-height: 581px;
+     margin-right: -400px;
+}
 
+p.description {
+  font-size: 16px;
+  font-weight: 300;
+    line-height: 1.5;
+  color: #666;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.button {
+  background-color: #50D1C2;
+  background-image: linear-gradient(#49A8F3, #50D1C2);
+  border: none;
+  color: white;
+  border-radius: 2px;
 
+  padding-top: 8px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 8px;
 
+    margin-top: 20px;
+margin-bottom: 20px;
 
+    font-size: 16px;
+    font-weight: 300;
+}
 
+.button:hover {
+  /*font-weight: 400;*/
+  box-shadow: 1px 3px 3px 0px rgba(34, 34, 34, 0.2);
+}
 
+footer a {
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+footer a:hover {
+  /*font-weight: 300;*/
+}
 
 
 
@@ -213,20 +270,20 @@ nav a:hover {
     WIDE: CSS3 Effects
    ==================== */
 
-    .header-container,
+    /*.header-container,
     .main aside {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
-    }
+    }*/
 
 /* ============
     WIDE: Menu
    ============ */
 
-    .title {
+    /*.title {
         float: left;
-    }
+    }*/
 
     nav {
         float: right;
@@ -239,12 +296,12 @@ nav a:hover {
 
     .main article {
         float: left;
-        width: 57%;
+        width: 40%;
     }
 
     .main aside {
         float: right;
-        width: 28%;
+        width: 55%;
     }
 }
 
@@ -255,7 +312,7 @@ nav a:hover {
    =============== */
 
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        /*width: 1026px; /* 1140px - 10% for margins */*/
         margin: 0 auto;
     }
 }
