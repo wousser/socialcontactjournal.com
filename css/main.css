@@ -130,6 +130,7 @@ nav a:hover {
 
 .main article h1 {
   font-size: 50px;
+  line-height: 1em;
   font-weight: 100;
   margin-top: 20px;
   /*margin-bottom: 20px;*/
@@ -137,7 +138,18 @@ nav a:hover {
 
 .main aside {
     color: white;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      justify-content: center;
     /*padding: 0px 5% 10px;*/
+}
+
+aside img {
+  padding-bottom: 20px;
+   margin: auto;
+   max-height: 400px;
 }
 
 .footer-container footer {
@@ -167,14 +179,14 @@ article {
 }
 
 aside {
-      overflow: hidden;
+      /*overflow: hidden;*/
 }
 
 .screenshot {
   /*overflow: hidden;*/
-  max-width: 896px;
+  /*max-width: 896px;
     max-height: 581px;
-     margin-right: -400px;
+     margin-right: -400px;*/
 }
 
 p.tagline {
@@ -285,6 +297,26 @@ footer a:hover {
         margin-right: 0;
     }
 
+    .main aside {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      justify-content: center;
+      /*padding: 20px 5% 10px;*/
+      /*justify-content: flex-end;*/
+
+        /*float: right;*/
+        /*width: 65%;*/
+    }
+
+    aside img {
+      padding-bottom: 20px;
+       margin: auto;
+       max-height: 400px;
+
+    }
+
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
@@ -330,13 +362,45 @@ footer a:hover {
 
     .main article {
         float: left;
-        width: 40%;
+        width: 30%;
     }
 
     .main aside {
-        float: right;
-        width: 55%;
+      display: flex;
+      align-content: flex-start;
+      align-items: center;
+      /*flex-flow: row wrap;*/
+      justify-content: space-between;
+      /*justify-content: flex-end;*/
+
+        /*float: right;*/
+        /*width: 65%;*/
     }
+
+    aside img {
+      padding-bottom: 20px;
+       /*margin: auto;*/
+       max-height: 560px;
+
+    }
+}
+
+
+
+@media only screen and (min-width: 970px) {
+  aside img {
+    max-height: 480px;
+  }
+
+  .screenshot3 {
+        transform: translate(0px, -400px);
+        /*z-index: 1000;*/
+  }
+
+  .screenshot2 {
+    z-index: 1000;
+  }
+
 }
 
 @media only screen and (min-width: 1140px) {
@@ -344,6 +408,27 @@ footer a:hover {
 /* ===============
     Maximal Width
    =============== */
+
+   .main aside {
+     justify-content: flex-start;
+   }
+
+   aside img {
+     max-height: 480px;
+   }
+
+   .screenshot1 {
+     transform: translate(100px, 0px);
+   }
+
+   .screenshot2 {
+         transform: translate(0px, 100px);
+         z-index: 1000;
+   }
+
+   .screenshot3 {
+     transform: translate(-100px, 0px);
+   }
 
     .wrapper {
         /*width: 1026px; /* 1140px - 10% for margins */*/
