@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon-Original</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="98.3749498%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#50D1C2" offset="0%"></stop>
+            <stop stop-color="#49A8F3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-16.7468529%" y1="100%" x2="143.873139%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#686868" offset="0%"></stop>
+            <stop stop-color="#1F1F1F" stop-opacity="0.80932971" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-Original">
+            <g id="Logo" transform="translate(13.000000, 27.000000)">
+                <path d="M22,27.997932 C22,24.6853656 24.6882172,22 28.0063161,22 L72,22 L72,39.002068 C72,42.3146344 69.3117828,45 65.9936839,45 L22,45 L22,27.997932 Z" id="Fill" fill="url(#linearGradient-1)"></path>
+                <rect id="Rectangle-Up" stroke="url(#linearGradient-2)" stroke-width="2" x="1" y="1" width="72" height="45" rx="12"></rect>
+                <rect id="Rectangle-Down" stroke="url(#linearGradient-2)" stroke-width="2" x="21" y="21" width="72" height="45" rx="12"></rect>
+                <g id="Circles" transform="translate(33.000000, 31.000000)" fill="#FFFFFF">
+                    <circle id="Oval" cx="2.5" cy="2.5" r="2.5"></circle>
+                    <circle id="Oval" cx="13.5" cy="2.5" r="2.5"></circle>
+                    <circle id="Oval" cx="24.5" cy="2.5" r="2.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
