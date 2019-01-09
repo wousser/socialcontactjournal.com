@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
-    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-    <title>Icon-Original</title>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Art (Edit Me)</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="0%" y1="50%" x2="98.3749498%" y2="50%" id="linearGradient-1">
-            <stop stop-color="#50D1C2" offset="0%"></stop>
-            <stop stop-color="#49A8F3" offset="100%"></stop>
-        </linearGradient>
-        <linearGradient x1="-16.7468529%" y1="100%" x2="143.873139%" y2="100%" id="linearGradient-2">
-            <stop stop-color="#686868" offset="0%"></stop>
-            <stop stop-color="#1F1F1F" stop-opacity="0.80932971" offset="100%"></stop>
-        </linearGradient>
+        <radialGradient cx="4.19879176%" cy="4.96127023%" fx="4.19879176%" fy="4.96127023%" r="217.55848%" gradientTransform="translate(0.041988,0.049613),scale(0.460246,1.000000),rotate(22.346803),scale(1.000000,1.007432),translate(-0.041988,-0.049613)" id="radialGradient-1">
+            <stop stop-color="#FFE255" offset="0%"></stop>
+            <stop stop-color="#FAB000" offset="100%"></stop>
+        </radialGradient>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Icon-Original">
-            <g id="Logo" transform="translate(13.000000, 27.000000)">
-                <path d="M22,27.997932 C22,24.6853656 24.6882172,22 28.0063161,22 L72,22 L72,39.002068 C72,42.3146344 69.3117828,45 65.9936839,45 L22,45 L22,27.997932 Z" id="Fill" fill="url(#linearGradient-1)"></path>
-                <rect id="Rectangle-Up" stroke="url(#linearGradient-2)" stroke-width="2" x="1" y="1" width="72" height="45" rx="12"></rect>
-                <rect id="Rectangle-Down" stroke="url(#linearGradient-2)" stroke-width="2" x="21" y="21" width="72" height="45" rx="12"></rect>
-                <g id="Circles" transform="translate(33.000000, 31.000000)" fill="#FFFFFF">
-                    <circle id="Oval" cx="2.5" cy="2.5" r="2.5"></circle>
-                    <circle id="Oval" cx="13.5" cy="2.5" r="2.5"></circle>
-                    <circle id="Oval" cx="24.5" cy="2.5" r="2.5"></circle>
-                </g>
+    <g id="Icon_Art-(Edit-Me)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="1024" height="1024"></rect>
+        <g id="Logo" transform="translate(136.000000, 244.000000)">
+            <path d="M176.234043,224.386309 C176.234043,197.844636 197.750655,176.328358 224.298748,176.328358 L576.765957,176.328358 L576.765957,312.613691 C576.765957,339.155364 555.249345,360.671642 528.701252,360.671642 L176.234043,360.671642 L176.234043,224.386309 Z" id="Fill" fill="url(#radialGradient-1)" fill-rule="nonzero"></path>
+            <rect id="Rectangle-Up" stroke="#494231" stroke-width="16.0190006" x="8.00950031" y="8.00950031" width="576.768233" height="360.682492" rx="96.1140038"></rect>
+            <rect id="Rectangle-Down" stroke="#494231" stroke-width="16.0190006" x="168.222266" y="168.308008" width="576.768233" height="360.682492" rx="96.1140038"></rect>
+            <g id="Circles" transform="translate(264.351064, 248.462687)" fill="#FFFFFF" fill-opacity="0.95">
+                <ellipse id="Oval" cx="20.0265957" cy="20.0373134" rx="20.0265957" ry="20.0373134"></ellipse>
+                <ellipse id="Oval" cx="108.143617" cy="20.0373134" rx="20.0265957" ry="20.0373134"></ellipse>
+                <ellipse id="Oval" cx="196.260638" cy="20.0373134" rx="20.0265957" ry="20.0373134"></ellipse>
             </g>
         </g>
     </g>
