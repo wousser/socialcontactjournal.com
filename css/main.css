@@ -2,8 +2,12 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.4;
+}
+
+p {
+    font-size: 1.25rem;
 }
 
 ::-moz-selection {
@@ -73,12 +77,41 @@ textarea {
     margin-left: 8px;
 }
 
+div.featurediscription h1 {
+    line-height: 1.5;
+
+}
+
 div.featurediscription p {
-    line-height: 28px;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.featureblocks {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.featureblock p.title {
+    font-size: 3rem;
+    line-height: 1;
+    color: #FFC100;
+}
+
+.featureblock p.subtitle {
+    font-size: 1rem;
+}
+
+.featureblock p {
+    margin-top: 16px;
+    margin-bottom: 8px;
 }
 
 .shortreference h2 {
-    text-align: center;
+    
 }
 
 .shortreference {
@@ -88,8 +121,8 @@ div.featurediscription p {
 #logo {
     width: 120px;
     height: 120px;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    /* margin-bottom: 40px; */
+    /* margin-top: 40px; */
 }
 
 article {
@@ -124,7 +157,7 @@ article {
 }
 
   body {
-      color: #222222;
+      color: #494231;
       font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   }
 
@@ -133,23 +166,47 @@ article {
   }
 
   .hero h1 {
-      font-size: 40px;
+      font-size: 2.25rem;
       margin-top: 0;
       line-height: 1.5;
       margin-right: 80px;
-      font-weight: 500;
+      font-weight: 700;
   }
 
   p.herotext {
     margin-bottom: 40px;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .try {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 80px;
+  }
+
+  .try .download {
+      margin-top: 32px;
+  }
+
+  dl.dlfaq {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .faq h1 {
+    text-align: center;
   }
 
   .screenshot {
     -webkit-box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173,186,204,.25), 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
     box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173,186,204,.25), 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
+  }
+
+  .screenshotlarge {
+    max-width: 100%;
   }
 
   .shadow {
@@ -182,8 +239,19 @@ article {
         height: 100%; */
     }
 
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .try {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 32px;
+    }
+
     .hero h1 {
         margin-bottom: 0;
+        margin-right: 0;
     }
 
     .download {
@@ -191,8 +259,8 @@ article {
     }
 
     .left, .right {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 32px;
+        margin-right: 32px;
     }
 
     .fullpage {
@@ -206,7 +274,7 @@ article {
     }
 
     .referencecards {
-        margin: 16px;
+        
         align-items: initial;
     }
 
@@ -223,10 +291,10 @@ article {
     }
 
     .shortreference {
-        margin-top: 40px;
+        
     }
 
-    .referencecontent {
+    .referencecontent, .faq {
         margin-left: 16px;
         margin-right: 16px;
     }
@@ -245,12 +313,17 @@ article {
     .content {
         display: inline-grid;
         align-items: center;
-        grid-template-columns: 60% 40%;
-        height: 100%;
-        width: 100%;
+        grid-template-columns: 50% 50%;
+        /* height: 100%; */
+        /* width: 100%; */
         /* width: 100%;
         height: 100%; */
     }
+
+    .content, .referencecontent, .faq {
+        margin-left: 32px;
+        margin-right: 32px;
+   }
 
     .wrapper {
         /*width: 1026px; /* 1140px - 10% for margins */
@@ -268,7 +341,7 @@ article {
       width: 100%;
   
       /* Set the height to match that of the viewport. */
-      height: 100vh;
+      /* height: 100vh; */
   
       /* Set the width to match that of the viewport. */
       width: 100vw;
@@ -306,14 +379,14 @@ article {
     }
 
     .referencecards {
-        margin: 80px;
+        
         display: inline-grid;
-        align-items: center;
-        grid-template-columns: auto auto auto;
+        /* align-items: center; */
+        grid-template-columns: auto auto auto auto;
     }
     
     .shortreference {
-        margin-top: 80px;
+        
         margin-bottom: 80px;
     }
     
@@ -348,12 +421,15 @@ article {
     }
 
     .hero h1 {
-        margin-bottom: 32px;
         font-size: 2.5em;
     }
 
     .left {
         justify-items: left;
+    }
+
+    .try {
+        margin-top: 80px;
     }
 }
 
@@ -389,14 +465,14 @@ article {
     }
 
     .left {
-        margin-left: 80px;
-        margin-right: 80px;
+        /* margin-left: 80px; */
+        /* margin-right: 80px; */
 
     }
 
     .right {
-        margin-right: 80px;
-        margin-left: 80px;
+        /* margin-right: 80px; */
+        /* margin-left: 80px; */
     }
 
 
