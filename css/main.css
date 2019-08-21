@@ -118,13 +118,6 @@ div.featurediscription p {
     width: 100%;
 }
 
-#logo {
-    width: 120px;
-    height: 120px;
-    /* margin-bottom: 40px; */
-    /* margin-top: 40px; */
-}
-
 article {
   text-align: center;
   margin-left: 20px;
@@ -132,28 +125,48 @@ article {
 }
 
   #header {
-      background-color: #ffffff1f;
-      position: fixed;
+    background-color: #ffffff;
+    position: fixed;
     width: 100%;
+    height: 60px;
     z-index: 1000;
+    box-shadow: 1px 1px 3px 0 rgba(1, 1, 1, 0.2);
   }
 
-  .menu {
+  #header .logo img {
+      width: 48px;
+  }
+
+  #header .floatleft {
+    margin-top: 8px;
+      float: left;
       margin-left: 80px;
-      padding-top: 8px;
-      padding-bottom: 8px;
+  }
+
+  #header .floatright {
+    margin-top: 8px;
+    float: right;
+    display: inline-flex;
+    margin-right: 80px;
+}
+
+  .menu {
+    padding-top: 12px;
   }
 
   .menu a {
       font-size: 16px;
-      color: #494231;
-      margin-right: 40px;
-      text-decoration: none
+      color: #718096;
+      text-transform: uppercase;
+      margin-right: 48px;
+      text-decoration: none;
+      font-weight: 500;
   }
 
   .menu a:hover {
     text-decoration: none;
     font-weight: 500;
+    color: #2D3748;
 }
 
   body {
@@ -162,19 +175,21 @@ article {
   }
 
   .hero {
+      /* background-color: #FFC100; */
     background: linear-gradient(#FCF2DF, #E9EBFA, rgb(255, 255, 255));
   }
 
   .hero h1 {
-      font-size: 2.25rem;
+        /* color: #F7FAFC; */
       margin-top: 0;
       line-height: 1.5;
-      margin-right: 80px;
+      
       font-weight: 700;
   }
 
   p.herotext {
     margin-bottom: 40px;
+    /* color: #F7FAFC; */
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -189,6 +204,23 @@ article {
 
   .try .download {
       margin-top: 32px;
+  }
+
+  .support {
+    background-color: #FFC100;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: inline-grid;
+    align-items: center;
+    grid-template-columns: auto;
+    justify-items: center;
+    width: 100vw;
+  }
+
+  img.support {
+      height: 200px;
   }
 
   dl.dlfaq {
