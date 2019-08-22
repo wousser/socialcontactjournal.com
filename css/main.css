@@ -282,6 +282,7 @@ article {
     }
 
     .hero h1 {
+        margin-top: 64px;
         margin-bottom: 0;
         margin-right: 0;
     }
@@ -310,12 +311,12 @@ article {
         align-items: initial;
     }
 
-    .qrcode {
+    #header, .qrcode, .tip, .producthunt, .menu {
         display: none;
     }
 
-    .tip {
-        display: none;
+    img.support {
+        width: 200px;
     }
 
     div.ratings {
@@ -370,6 +371,7 @@ article {
     }
 
     .content, .referencecontent, .faq {
+        margin-top: 32px;
         margin-left: 32px;
         margin-right: 32px;
    }
@@ -424,6 +426,10 @@ article {
     
     .qrcode {
         margin-left: 40px;
+        display: initial;
+    }
+
+    #header, .qrcode, .tip, .producthunt, .menu {
         display: initial;
     }
 
