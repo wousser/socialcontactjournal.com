@@ -318,6 +318,23 @@ article {
         display: none;
     }
 
+    div.ratings {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    p.ratings {
+        font-size: 0.8em;
+        color: #999;
+        float: left;
+        margin-left: 12px;
+        margin-top: 6px;
+    }
+
+    img.stars {
+        float: left;
+    }
+
     .speech-bubble:after {
         display: none;
     }
