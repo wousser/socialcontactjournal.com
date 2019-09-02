@@ -1,307 +1,289 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
-
+<!DOCTYPE html>
+<html lang='en'>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Social Contact Journal - Personal CRM with reminders</title>
-  <meta name="description" content="Social Contact Journal. Personal CRM with reminders. Contact Journal is an intelligent CRM assistant on your phone that helps you stay in touch with family, clients, co-workers or friends.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/disclosure-faq.css">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500" rel="stylesheet">
-  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Social Contact Journal - Personal CRM with reminders</title>
+	<meta name="description" content="Social Contact Journal. Personal CRM with reminders. Contact Journal is an intelligent CRM assistant on your phone that helps you stay in touch with family, clients, co-workers or friends.">
+	<!-- Don't forget to add your metadata here -->
+	<link rel='stylesheet' href='css/style.css' />
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500" rel="stylesheet">
+	<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<style type="text/css">
+	#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
 </head>
-
 <body>
-  <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-  <!-- Header -->
-<div id="header">
-  <div class="floatleft">
-      <div class="logo"><img id="logo" src="img/logo.svg" alt="Social Contact Journal Logo" title="logo"></img></div>
-  </div>
-  <div class="floatright">
-      <div class="menu">
-          <a href="#features" title="Features">Features</a>
-          <a href="#faq" title="FAQ">FAQ</a>
-          <a href="#support" title="Support">Support</a>
-          <a href="https://medium.com/@SocialContactJournal" rel="external" target="_blank" title="Blog">Blog</a>
-        </div>
-        <div class="producthunt">
-    
-            <a href="https://www.producthunt.com/posts/social-contact-journal?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-social-contact-journal" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=157100&theme=light" alt="Social Contact Journal - Stay in touch | Product Hunt Embed" style="width: 250px; height: 48px;" width="250px" height="48px" /></a>
-    
-        </div>
-  </div>
-  </div>
-  <!-- /Header -->
+	<!-- Hero(extended) navbar -->
+	<div class="navbar navbar--extended">
+		<nav class="nav__mobile"></nav>
+		<div class="container">
+			<div class="navbar__inner">
+				<a href="index.html" class="navbar__logo"><img src="images/logo/logo.svg" width="48" height="48" alt="Social Contact Journal Logo" /></a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="#features">Features</a></li>
+						<!--
+						<li><a href="inthemedia.html">In the Media</a></li>
+						<li><a href="support.html">Support</a></li>
+						-->
+						<li><!-- Calendly link widget begin -->
+							<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/wouter-bron/15min'});return false;">Schedule a call</a>
+							<!-- Calendly link widget end --></li>
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div>
+	<!-- Hero unit -->
+	<div class="hero">
+		<div class="hero__overlay hero__overlay--gradient"></div>
+		<div class="hero__mask"></div>
+		<div class="hero__inner">
+			<div class="container">
+				<div class="hero__content">
+					<div class="hero__content__inner" id='navConverter'>
+							<div class="flex__container flex__align_middle">
+									<div class="flex__content">
+						<h1 class="hero__title">Improve your personal network day by day with Contact Journal</h1>
+						<p class="hero__text">Contact Journal is an intelligent personal CRM on your phone that helps you stay in touch with family, clients, co-workers, and friends.</p>
+						<div class="download flex__container flex__align_middle">
+						<div class="appstore flex__download__button">
+							<a href="https://apps.apple.com/app/apple-store/id1186696582?pt=118510345&ct=b&mt=8"><img class="appstore" src="images/download/appstore_badge.svg"></img></a>
+						  </div>
 
-  <!-- Add your site or application content here -->
-  <div id="hero" class="fullpage hero">
-    <div class="content">
-        <div class="left">
-          
-          <h1>Improve your personal network day by day with Contact Journal</h1>
-          <!-- <h1>See your personal network improve day by day</h1> -->
-          <p class="herotext">Contact Journal is an intelligent personal CRM on your phone that helps you stay in touch with family, clients, co-workers, and friends.</p>
-          <!-- <p>Keep a personal timeline of all your interactions, keep track of your whole social circle, and be reminded to reach out proactively.</p> -->
-          <!-- <p>Download now.</p> -->
-          <div class="download">
-            <div class="appstore button">
-              <a href="https://itunes.apple.com/us/app/super-social/id1186696582?ls=1&mt=8"><img class="appstore" src="img/appstore_badge.svg"></img></a>
-            </div>
-            <div class="qrcode">
-              <img class="appstoreqr" src="img/appstore_qr.svg" width="80" height="80"></img>
-            </div>
-            <div class="tip">
-              <p class="speech-bubble shadow">Point your phone's camera here to try it out!</p>
-            </div>
-          </div>
-          <div class="ratings">
-              <img class="stars" src="img/stars.png" alt="Star rating of Contact Journal" title="Star rating of Contact Journal"></img>
-            <p class="ratings">4.0, 6 Ratings</p>
-          </div>
-        </div>
-        <div class="right">
-            <img class="screenshot" src="img/screenshots/today.png" srcset="img/screenshots/today@2x.png 2x" alt="Screenshot of Contact Journal's Today screen" title="Screenshot of Contact Journal's Today screen"></img>
-        </div>
+						  <div class="flex__download__qr">
+						  <!--<div class="qrcode"></div>-->
+							<img class="appstoreqr" src="images/download/appstore_qr.svg" width="80" height="80"></img>
+						  
+						  <div class="tip">
+							<p class="speech-bubble shadow">Point your phone's camera here to try it out!</p>
+						  </div>
+						</div>
+
+						</div>
+						<div class="ratings">
+							<img class="stars" src="images/download/stars.png" alt="Star rating of Contact Journal" title="Store rating of Contact Journal"></img>
+						  <span class="ratings">4.0, 6 Ratings</span>
+						</div>
+					</div>
+					<div class="flex__content flex__content__center">
+									<img class="screenshot-hero" src="images/screenshots/today-iphone.png" srcset="images/screenshots/today-iphone@2x.png 2x" alt="Screenshot of Contact Journal's Today screen" title="Screenshot of Contact Journal's Today screen">
+					</div>
+				</div><!-- flex container-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hero__sub">
+		<span id="scrollToNext" class="scroll">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
+		</span>
+	</div>
+	<!-- Steps -->
+	<div class="steps landing__section">
+		<div class="container">
+			<h2>Made for people like you</h2>
+			<p>Don’t take our word for it, see it for yourself.</p>
+		</div>
+		<!--
+		<div class="container using">
+			<div class="steps__inner">
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/undraw_designer.svg" class="step__image">
+					</div>
+					<h4>Programmers</h4>
+					<p class="step__text">A landing page for your open source projects. Present your solution, easily create docs.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/undraw_responsive.svg" class="step__image">
+					</div>
+					<h4>Designers</h4>
+					<p class="step__text">A website for your own freebies. Let the world download and use your artwork.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/undraw_creation.svg" class="step__image">
+					</div>
+					<h4>Makers</h4>
+					<p class="step__text">A great starting point for your web application. Focus on your idea and execution.</p>
+				</div>
+			</div>
+		</div>
+		-->
+
+		<div class="container references">
+				<div class="steps__inner">
+					<div class="step">
+						<p class="step__text">"I've been looking for an app like this forever! It is fantastic!"
+							<br /><strong>- Rogy</strong></p>
+					</div>
+					<div class="step">
+							<p class="step__text">"I really like your app and it appears to be the only one of its kind I can find"
+									<br /><strong>- Han</strong></p>
+						</div>
+						<div class="step">
+								<p class="step__text">"I really love your app :D"<br /><strong>- Florian</strong></p>
+							</div>
+							<div class="step">
+									<p class="step__text">"I’m very satisfied, keep up the good work."<br /><strong>- FAVL</strong></p>
+								</div>
+				</div>
+			</div>
+
+	</div>
+	<!-- Expanded sections -->
+	<div id="features" class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="images/screenshots/contacts-iphone.png" srcset="images/screenshots/contacts-iphone@2x.png 2x" alt="Screenshot of Contact Journal's Contacts screen" title="Screenshot of Contact Journal's Contacts screen" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Reach out, stay in touch, and remember your conversations</h2>
+					<p class="expanded__text">With Contact Journal you know who to reach out to, and when. And you won't forget what you talked about last time.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="images/screenshots/moments-iphone.png" srcset="images/screenshots/moments-iphone@2x.png 2x" alt="Screenshot of Contact Journal's Moments screen" title="Screenshot of Contact Journal's Moments screen" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Focus on your content and relive your best conversations</h2>
+					<p class="expanded__text">You can count on Contact Journal to keep track of your moments. Enhance it with pictures, audio notes or handy reminders.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="images/screenshots/suggestions-iphone.png" srcset="images/screenshots/suggestions-iphone@2x.png 2x" alt="Screenshot of Contact Journal's Details screen" title="Screenshot of Contact Journal's Details screen" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Schedule and message suggestions</h2>
+					<p class="expanded__text">Contact Journal lets you know the best time to reach out and it helps you compose your message with suggestions.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="images/screenshots/sync.svg" alt="Sync all your devices" title="Sync all your devices" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Save time and coordinate across multiple devices, seamlessly</h2>
+					<p class="expanded__text">Reaching out during your morning commute, or on the iPad after dinner?<br /><br />
+						Contact Journal understands your preference and seamlessly syncs your data across your devices.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="images/screenshots/collaborate-iphone.png" srcset="images/screenshots/collaborate-iphone@2x.png 2x" alt="Screenshot of Contact Journal's Details screen" title="Screenshot of Contact Journal's Details screen" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Collaborate with your partner, family members or colleagues</h2>
+					<p class="expanded__text">Did your partner reach out to your brother already? Did Mike from HR already contact your client?<br /><br />
+						Collaborate with shared contacts so you don't reach out twice, and everybody stays up to date.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Call To Action -->
+	<div class="cta cta--reverse">
+		<div class="container flex__container">
+			<div class="cta__inner">
+				<h2 class="cta__title">Ready to try?</h2>
+				<p class="cta__sub cta__sub--center">Download it now and start improving your personal network!</p>
+				<div class="appstore-bottom">
+						<a href="https://apps.apple.com/app/apple-store/id1186696582?pt=118510345&ct=b&mt=8"><img class="appstore" src="images/download/appstore_badge.svg"></img></a>
+					  </div>
+			</div>
+			<div class="cta__inner">
+					<h2 class="cta__title">Support</h2>
+					<p class="cta__sub cta__sub--center">We're here to help. Visit our support pages or schedule a call.</p>
+					<a href="#" class="button button__accent">Go to support</a>
+				</div>
+				<div class="cta__inner">
+						<h2 class="cta__title">Stay informed</h2>
+						<p class="cta__sub cta__sub--center">Subscribe to our newsletter</p>
+						<!-- Begin Mailchimp Signup Form -->
+
+<div id="mc_embed_signup">
+<form action="https://socialcontactjournal.us3.list-manage.com/subscribe/post?u=c469820e7f526cc1cefb0630f&amp;id=e132f9daa7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c469820e7f526cc1cefb0630f_e132f9daa7" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button__accent"></div>
     </div>
-  </div>
+</form>
+</div>
 
-  <div id="shortreference" class="shortreference">
-      <div class="referencecontent">
-        <h2>Loved by teams, professionals and individuals</h2>
-        <div class="referencecards">
-          <div class="referencecard">
-            <p class="referencequote">
-                “I've been looking for an app like this forever! It is fantastic!”
-            </p>
-            <p class="referencecustomer">
-              - Rogy
-          </p>
-        </div>
-
-          <div class="referencecard">
-              <p class="referencequote">
-                  “I really like your app and it appears to be the only one of its kind I can find”
-              </p>
-              <p class="referencecustomer">
-                - Han
-            </p>
-          </div>
-
-            <div class="referencecard">
-                <p class="referencequote">
-                    “I really love your app :D”
-                </p>
-                <p class="referencecustomer">
-                  - Florian
-              </p>
-            </div>
-
-            <div class="referencecard">
-              <p class="referencequote">
-                  “I’m very satisfied, keep up the good work.”
-              </p>
-              <p class="referencecustomer">
-                - FAVL
-            </p>
-          </div>
-        </div>
-        </div>
-    </div>
-
-    <!-- Feature 1-->
-    <div class="fullpage feature" id="features">
-        <div class="content">
-            <div class="left">
-              <img class="screenshot feature" src="img/screenshots/contacts.png" srcset="img/screenshots/contacts@2x.png 2x" alt="Screenshot of Contact Journal's Contacts screen" title="Screenshot of Contact Journal's Contacts screen"></img>
-            </div>
-            <div class="right">
-              <div class="featurediscription">
-                <h1 class="feature">Contact Journal helps you to reach out, stay in touch, and remember your conversations</h1>
-                <p>With Contact Journal you know who to reach out to, and when. And you won't forget what you talked about last time.
-                </p>
-<!--
-                <div class="featureblocks">
-                    
-                      <div class="featureblock">
-                        <p class="title">
-                            +21
-                        </p>
-                        <p class="subtitle">
-                         More reach out moments
-                      </p>
-                </div>
-
-                <div class="featureblock">
-                  <p class="title">
-                      +20
-                  </p>
-                  <p class="subtitle">
-                   Bla bla bla
-                </p>
-          </div>
-
-              </div>
-            -->
-            </div>
-        </div>
-        </div>
-      </div>
-      <!-- /Feature 1-->
-
-      <!-- Feature 2-->
-    <div class="fullpage feature">
-        <div class="content">
-            <div class="left">
-              <div class="featurediscription">
-                  <h1 class="feature">Focus on your content and relive your best conversations</h1>
-                  <p>You can count on Contact Journal to keep track of your moments. Enhance it with pictures, audio notes or handy reminders.</p>
-              </div>
-            </div>
-            <div class="right">
-              <img class="screenshot feature" src="img/screenshots/moments.png" srcset="img/screenshots/moments@2x.png 2x" alt="Screenshot of Contact Journal's Moments screen" title="Screenshot of Contact Journal's Moments screen"></img>
-        </div>
-        </div>
-      </div>
-      <!-- /Feature 2-->
-
-      <!-- Feature 3-->
-    <div class="fullpage feature">
-        <div class="content">
-          <div class="left">
-            <img class="screenshot feature" src="img/screenshots/suggestions.png" srcset="img/screenshots/suggestions@2x.png 2x" alt="Screenshot of Contact Journal's Details screen" title="Screenshot of Contact Journal's Details screen"></img>
-          </div>
-          <div class="right">
-            <div class="featurediscription">
-              <h1 class="feature">Struggling to reach out and stay in touch?</h1>
-              <p>Contact Journal lets you know the best time to reach out and it helps you compose your message with suggestions.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /Feature 3-->
-
-      <!-- Feature 4-->
-    <div class="fullpage feature">
-      <div class="content">
-          <div class="left">
-              <div class="featurediscription">
-                  <h1 class="feature">Save time and coordinate across multiple devices, seamlessly</h1>
-                  <p>Reaching out during your morning commute, or on the iPad after dinner? </p>
-                      <p>Contact Journal understands your preference and seamlessly syncs your data across your devices.</p>
-          </div>
-          </div>
-          <div class="right">
-              <img class="screenshotlarge" src="img/screenshots/ipadiphone.png" srcset="img/screenshots/ipadiphone@2x.png 2x" alt="Screenshot of Contact Journal's on iPhone and iPad" title="Screenshot of Contact Journal's on iPhone and iPad"></img>
-      </div>
-      </div>
-    </div>
-    <!-- /Feature 4-->
-
-    <!-- Feature 5-->
-    <div class="fullpage feature">
-      <div class="content">
-          <div class="left">
-              <img class="screenshot feature" src="img/screenshots/collaborate.png" srcset="img/screenshots/collaborate@2x.png 2x" alt="Screenshot of Contact Journal's Details screen" title="Screenshot of Contact Journal's Details screen"></img>
-          </div>
-          <div class="right">
-              <div class="featurediscription">
-                  <h1 class="feature">Collaborate with your SO, family members or colleagues</h1>
-                  <p>Did your SO reach out to your brother already? Did Mike from HR already contact your client?</p><p>Collaborate with shared contacts so you don't reach out twice, and everybody stays up to date.</p>
-          </div>
-      </div>
-      </div>
-    </div>
-    <!-- /Feature 5-->
-
-    <!-- FAQ -->
-    <div class="faq" id="faq">
-        <h1>FAQs</h1>
-    <dl class="dlfaq">
-        <dt>
-          <button aria-expanded="false" aria-controls="faq1_desc">
-           Is Contact Journal free to use?
-          </button>
-        </dt>
-        <dd>
-          <p id="faq1_desc" class="desc">
-              Yes! The basic version of Contact Journal is free to use. Premium members will have access to extra features.
-          </p>
-        </dd>
-        <dt>
-          <button aria-expanded="false" aria-controls="faq2_desc">
-            Is my data save?
-          </button>
-        </dt>
-        <dd>
-          <p id="faq2_desc" class="desc">
-            All the data you add to Contact Journal belongs to you. We do not have any rights on it.
-            With sync enabled, your data is synced with Apple iCloud.
-          </p>
-        </dd>
-        
-        <dt>
-          <button aria-expanded="false" aria-controls="faq4_desc">
-            Is Contact Journal a social network?
-          </button>
-        </dt>
-        <dd>
-          <p id="faq4_desc" class="desc">
-            No, Contact Journal is not a social network. You can't communincate with people via Contact Journal. All moments, details and events you store on Contact Journal are for your eyes only.
-          </p>
-        </dd>
-      </dl>
-    </div>
-    <!-- /FAQ -->
-
-    <!-- /Support -->
-    <div class="support" id="support">
-        <div class="content">
-            <div class="left">
-                <img class="support" src="img/undraw/undraw_begin_chat_c6pj.svg"></img>
-                </div>
-            <div class="right">
-        <h1>Contact our support team</h1>
-        <p>Have more questions? We're always happy to help. Email or chat with us.</p>
-        <p class="email">support@goodmorninglabs.com</p>
-        </div>
-      </div>
-    </div>
-    <!-- /Support -->
-
-    <!-- Give it a try-->
-    <div class="try">
-      <h1>Ready to try Contact Journal?</h1>
-      <p>Download it now and start improving your network!</p>
-      <div class="download">
-          <div class="appstore button">
-            <a href="https://itunes.apple.com/us/app/super-social/id1186696582?ls=1&mt=8"><img class="appstore" src="img/appstore_badge.svg"></img></a>
-          </div>
-          
-          <div class="qrcode">
-            <img class="appstoreqr" src="img/appstore_qr.svg" width="80" height="80"></img>
-          </div>
-          <div class="tip">
-            <p class="speech-bubble shadow">Point your phone's camera here to try it out!</p>
-          </div>
-        
-        </div>
-    </div>
-    <!-- /Give it a try-->
-
-    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c469820e7f526cc1cefb0630f","lid":"e132f9daa7","uniqueMethods":true}) })</script>
+<!--End mc_embed_signup-->
+						
+					</div>
+		</div>
+		
+	</div>
+	<!-- Footer -->
+	<div class="footer footer--dark">
+		<div class="container">
+			<div class="footer__inner">
+				<a href="index.html" class="footer__textLogo">Social Contact Journal</a>
+				<div class="footer__data">
+					<div class="footer__data__item">
+						<div class="footer__row">
+							Created by <a href="https://goodmorninglabs.com/" target="_blank" class="footer__link">Good Morning Labs</a>
+						</div>
+						<div class="footer__row">
+							 Supported by <a href="https://ycombinator.com/" target="_blank" class="footer__link">Y Combinator Startup School</a>
+						</div>
+					</div>
+					<div class="footer__data__item">
+						
+					</div>
+					<div class="footer__data__item">
+					<div class="footer__row">
+						<a href="#" target="_blank" class="footer__link">Press-kit</a>
+					</div>
+					<div class="footer__row">
+						<a href="https://twitter.com/SContactJournal" target="_blank" class="footer__link">Twitter</a>
+					</div>
+					<div class="footer__row">
+						<a href="https://socialcontactjournal.com/privacy/" target="_blank" class="footer__link">Privacy Policy</a>
+					</div>
+					<div class="footer__row">
+						<a href="https://socialcontactjournal.com/terms/" class="footer__link">Terms of Service</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src='js/app.min.js'></script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c469820e7f526cc1cefb0630f","lid":"e132f9daa7","uniqueMethods":true}) })</script>
 
   <script type="application/ld+json">
     {
@@ -341,7 +323,5 @@
     ga('create', 'UA-43477833-2', 'auto');
     ga('send', 'pageview');
   </script>
-  <script src="js/disclosureButton.js"></script>
 </body>
-
 </html>
