@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-	<meta class="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Social Contact Journal - Personal CRM with reminders</title>
-	<link rel='stylesheet' href='css/style.min.css' />
-</head>
+	<head>
+		<meta class="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+		<title>Social Contact Journal - Personal CRM with reminders</title>
+		<meta name="description" content="Social Contact Journal. Personal CRM with reminders. Contact Journal is an intelligent CRM assistant on your phone that helps you stay in touch with family, clients, co-workers or friends.">
+		<!-- Don't forget to add your metadata here -->
+		<link rel='stylesheet' href='css/style.css' />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	</head>
 <body>
-	<!-- navbar -->
+	<!-- Hero(extended) navbar -->
 	<div class="navbar navbar--extended">
 		<nav class="nav__mobile"></nav>
 		<div class="container">
 			<div class="navbar__inner">
-				<a href="#" class="navbar__logo">Logo</a>
+				<a href="index.html" class="navbar__logo"><img src="images/logo/logo.svg" width="48" height="48" alt="Social Contact Journal Logo" /></a>
 				<nav class="navbar__menu">
 					<ul>
-						<li><a href="#">Option</a></li>
-						<li><a href="#">Option 2</a></li>
+						<li><a href="index.html#features">Features</a></li>
+						<li><a href="inthemedia.html">In the Media</a></li>
+						<!--
+						<li><a href="support.html">Support</a></li>
+						-->
+						<li><!-- Calendly link widget begin -->
+							<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/wouter-bron/15min'});return false;">Schedule a call</a>
+							<!-- Calendly link widget end --></li>
 					</ul>
 				</nav>
-				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+				<div class="navbar__menu-mob"><a href="" id='toggle' alt="Toggle menu"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
 			</div>
 		</div>
 	</div>
@@ -32,7 +43,7 @@
 				<div class="page__header__content">
 					<div class="page__header__content__inner" id='navConverter'>
 						<h1 class="page__header__title">In the Media</h1>
-						<p class="page__header__text">This is mostly a simple layout, rather than a complete page unlike the others. However this is a really useful starting point for anything you want to create.</p>
+						<p class="page__header__text">See what Social Contact Journal has been up to. Learn more about why people are talking about Social Contact Journal.</p>
 					</div>
 				</div>
 			</div>
@@ -44,15 +55,17 @@
 			<div class="page__inner">
 				<div class="page__menu">
 					<ul class="vMenu">
-						<li><a href="#" class="vMenu--active">Active page</a></li>
-						<li><a href="#">Second page</a></li>
+						<li><a href="#" class="vMenu--active">2019</a></li>
+						<!--<li><a href="#">Second page</a></li>
 						<li><a href="#">Third page</a></li>
 						<li><a href="#">Fourth page</a></li>
-						<li><a href="#">Fifth page</a></li>
+						<li><a href="#">Fifth page</a></li>-->
 					</ul>
 				</div>
 				<div class="page__main">
 					<div class="text-container">
+						<!--
+						<article>
 						<h3 class="page__main__title">A personal CRM to help you to become a better friend and partner</h3>
 						<h4>1 August 2019</h4>
 						<p>Social contact journal helps users to reach out, stay in touch, and remember their conversations. The app allows users to add notes and photos to their contacts. It is a personal CRM so no data will be publicly accessible.</p>
@@ -60,19 +73,59 @@
 						<p>“As a key account manager, I need to maintain and build relationships. Congratulating on a personal anniversary like their professional qualification seems like nothing, but remembering this makes a great impression on people and we never fall short on things to discuss.” - says Megan. </p>
 						<p>Sam, who is an avid traveler, is using the app daily as well. He says “I am happy that the app can remind me to reach out to someone every month, or quarter. It helps me to keep people closer and makes my life easier as I can remember more important details.”</p>
 						<p>Social Contact journal is available on the iPhone and iPad. Try it out now and become more social.</p>
-
+					</article>
+					<hr class="article-sep" />
+				-->
+					<article>
 						<h3 class="page__main__title">Social contact journal joins startup school by Y combinator</h3>
 						<h4>22 July 2019</h4>
 						<p>Social Contact Journal is a personal CRM to help you stay in touch. This summer it was selected in the startup school program from Y combinator. The program aims to encourage and inspire startups to positively impact the world. In addition, it helps Social Contact Journal with talks, mentorship and community to become a more user-oriented startup.</p>
 						<p>“We are very excited about many of the companies that are participating in Startup School; the quality of companies has been extremely impressive and makes us confident that there are more founders starting more companies throughout the world.” – Y Combinator Startup school</p>
 						<p>“Joining startup school is incredibly helpful as it inspires us to make a better product for our users. We are passionate to help people to better reach out, stay in touch, and remember their conversations. Since startup school, we’re talking more with our users to help them achieve their goals and to improve our service.“ – Social Contact Journal</p>
 
-						<h4>About Startup school by Y combinator</h4>
-						<p>Startup School is a 10-week program to support and inspire the next generation of startups.
-						Y Combinator provides seed funding for startups. www.ycombinator.com</p>
+						<h4>About Startup School by Y combinator</h4>
+						<p>Startup School is a 10-week program to support and inspire the next generation of startups.<br />
+						Y Combinator provides seed funding for startups: <a href="https://www.ycombinator.com">ycombinator.com</a></p>
 						<h4>Social Contact Journal</h4>
 						<p>
-						Social Contact Journal is a personal CRM to help you stay in touch. To learn more visit: www.socialcontactjournal.com</p>
+						Social Contact Journal is a personal CRM to help you stay in touch. To learn more visit: <a href="https://www.socialcontactjournal.com">socialcontactjournal.com</a></p>
+					</article>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="footer footer--dark">
+			<div class="container">
+				<div class="footer__inner">
+					<a href="index.html" class="footer__textLogo">Social Contact Journal</a>
+					<div class="footer__data">
+						<div class="footer__data__item">
+							<div class="footer__row">
+								Created by <a href="https://goodmorninglabs.com/" target="_blank" class="footer__link" rel="noreferrer">Good Morning Labs</a>
+							</div>
+							<div class="footer__row">
+								 Supported by <a href="https://ycombinator.com/" target="_blank" class="footer__link" rel="noreferrer">Y Combinator Startup School</a>
+							</div>
+						</div>
+						<div class="footer__data__item">
+							
+						</div>
+						<div class="footer__data__item">
+						<div class="footer__row">
+							<a href="#" target="_blank" class="footer__link">Press-kit</a>
+						</div>
+						<div class="footer__row">
+							<a href="https://twitter.com/SContactJournal" target="_blank" class="footer__link" rel="noreferrer">Twitter</a>
+						</div>
+						<div class="footer__row">
+							<a href="/privacy/" target="_blank" class="footer__link">Privacy Policy</a>
+						</div>
+						<div class="footer__row">
+							<a href="/terms/" target="_blank" class="footer__link">Terms of Service</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -80,5 +133,6 @@
 	</div>
 
 <script src='js/app.min.js'></script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 </body>
 </html>
