@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>website logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="4.19879176%" cy="4.96127023%" fx="4.19879176%" fy="4.96127023%" r="217.55848%" gradientTransform="translate(0.041988,0.049613),scale(0.460246,1.000000),rotate(22.346803),scale(1.000000,1.007432),translate(-0.041988,-0.049613)" id="radialGradient-1">
+            <stop stop-color="#FFE255" offset="0%"></stop>
+            <stop stop-color="#FAB000" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="website-logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#FFFFFF" fill-opacity="0.0" fill-rule="nonzero" x="0" y="0" width="1024" height="1024"></rect>
+        <g id="Logo" transform="translate(136.000000, 244.000000)">
+            <rect id="Background-Up" stroke="#494231" stroke-width="16.0190006" fill="#FFFFFF" x="8.00950031" y="8.00950031" width="576.768233" height="360.682492" rx="96.1140038"></rect>
+            <rect id="Background-Down" stroke="#494231" stroke-width="16.0190006" fill="#FFFFFF" x="168.222266" y="168.308008" width="576.768233" height="360.682492" rx="96.1140038"></rect>
+            <path d="M176.234043,224.386309 C176.234043,197.844636 197.750655,176.328358 224.298748,176.328358 L576.765957,176.328358 L576.765957,312.613691 C576.765957,339.155364 555.249345,360.671642 528.701252,360.671642 L176.234043,360.671642 L176.234043,224.386309 Z" id="Fill" fill="url(#radialGradient-1)" fill-rule="nonzero"></path>
+            <rect id="Rectangle-Up" stroke="#494231" stroke-width="16.0190006" x="8.00950031" y="8.00950031" width="576.768233" height="360.682492" rx="96.1140038"></rect>
+            <rect id="Rectangle-Down" stroke="#494231" stroke-width="16.0190006" x="168.222266" y="168.308008" width="576.768233" height="360.682492" rx="96.1140038"></rect>
+            <g id="Circles" transform="translate(264.351064, 248.462687)" fill="#FFFFFF" fill-opacity="0.95">
+                <ellipse id="Oval" cx="20.0265957" cy="20.0373134" rx="20.0265957" ry="20.0373134"></ellipse>
+                <ellipse id="Oval" cx="108.143617" cy="20.0373134" rx="20.0265957" ry="20.0373134"></ellipse>
+                <ellipse id="Oval" cx="196.260638" cy="20.0373134" rx="20.0265957" ry="20.0373134"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
