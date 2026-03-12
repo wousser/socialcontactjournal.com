@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today Planner | Daily Planner App for Calendar, Reminders, and Tasks</title>
+
+    <!-- Canonical url -->
+    <link rel="canonical" href="https://todayplanner.app/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Today - Simple Day Planner",
+        "applicationCategory": "Productivity",
+        "operatingSystem": "iOS",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://apps.apple.com/us/app/today-simple-day-planner/id6738060398"
+        },
+        "description": "Today helps you stay organized with a simple daily timeline that shows your events, reminders, and tasks. Keep track of your day, set goals, and easily check off what you've done. All in one app.",
+        "featureList": [
+            "Daily Timeline: See your entire day at a glance",
+            "Full Calendar & Reminders integration",
+            "Complete Your Day: Check off tasks and events",
+            "Reflect & Set Goals: Capture daily reflections",
+            "Plan & Reflect: Track achievements and future plans",
+            "Countdowns: Set countdowns for anticipated events",
+            "Highlights: Circle events that need special attention",
+            "Customizable Day Labels",
+            "Day Photos: Add photos to specific days"
+        ],
+        "image": "https://todayplanner.app/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "Goodmorning Labs"
+        }
+    }
+    </script>
+
+    <meta name="description"
+        content="Organize your day with Today Planner. View calendars, reminders, tasks, countdowns, and daily reflections in one simple iPhone planner app.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://todayplanner.app/">
+    <meta property="og:title" content="Today Planner | Daily Planner App for Calendar, Reminders, and Tasks">
+    <meta property="og:description"
+        content="Organize your day with Today Planner. View calendars, reminders, tasks, countdowns, and daily reflections in one simple iPhone planner app.">
+    <meta property="og:image" content="https://todayplanner.app/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://todayplanner.app/">
+    <meta property="twitter:title" content="Today Planner | Daily Planner App for Calendar, Reminders, and Tasks">
+    <meta property="twitter:description"
+        content="Organize your day with Today Planner. View calendars, reminders, tasks, countdowns, and daily reflections in one simple iPhone planner app.">
+    <meta property="twitter:image" content="https://todayplanner.app/og-image.png">
+
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --text-color: #1d1d1f;
+            --secondary-text: #86868b;
+            --background: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--background);
+            color: var(--text-color);
+        }
+
+        .header {
+            padding: 1rem 0;
+            background: var(--background);
+            border-bottom: 1px solid #f2f2f7;
+        }
+
+        .header-inner {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-logo {
+            width: 38px;
+            height: 38px;
+            max-width: 38px;
+            max-height: 38px;
+            justify-self: start;
+            margin-right: 0.5rem;
+        }
+
+        .header-center {
+            justify-self: center;
+            text-align: center;
+        }
+
+        .app-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 0.25rem;
+            margin-top: 0;
+        }
+
+        .app-subtitle {
+            font-size: 1rem;
+            color: var(--secondary-text);
+        }
+
+        @media (max-width: 600px) {
+            .header-inner {
+                display: flex;
+                /* Add this */
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: stretch;
+            }
+
+            .header-center {
+                text-align: center;
+                margin: 0.5rem 0;
+            }
+
+            .download-btn {
+                align-self: center;
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 1.2rem;
+            padding: 0.5rem 1.4rem 0.5rem 1.1rem;
+            border: 1px solid rgba(37, 39, 59, 0.10);
+            /* subtle border with opacity */
+            border-radius: 2rem;
+            background: #fff;
+            color: var(--text-color);
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background 0.15s, box-shadow 0.15s, border-color 0.15s;
+            box-shadow: 0 2px 8px rgba(37, 39, 59, 0.06);
+            /* softer shadow with brand color at low opacity */
+            cursor: pointer;
+            gap: 0.5rem;
+            justify-self: end;
+            margin-top: 0;
+            margin-left: 1rem;
+        }
+
+        .download-btn:hover {
+            background: #f5f5f7;
+            border-color: rgba(37, 39, 59, 0.16);
+            /* slightly more visible border on hover */
+            box-shadow: 0 4px 16px rgba(37, 39, 59, 0.10);
+            /* slightly stronger shadow on hover */
+            text-decoration: none;
+        }
+
+        .qr-modal {
+            display: none;
+            position: fixed;
+            z-index: 200;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.35);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .qr-modal.active {
+            display: flex;
+        }
+
+        .qr-modal-content {
+            background: #fff;
+            border-radius: 18px;
+            padding: 2.2rem 2.2rem 2.5rem 2.2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+            text-align: center;
+            min-width: 320px;
+            max-width: 90vw;
+            position: relative;
+        }
+
+        .qr-modal-content h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .qr-modal-content p {
+            color: var(--secondary-text);
+            font-size: 0.85em;
+            line-height: 1.4;
+            margin-bottom: 1.2rem;
+        }
+
+        .qr-modal-close {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #86868b;
+            cursor: pointer;
+            transition: color 0.15s;
+            line-height: 1;
+        }
+
+        .qr-modal-close:hover {
+            color: #1d1d1f;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+            margin: 0 auto;
+            flex: 1;
+            min-height: calc(100vh - 200px);
+            overflow: hidden;
+            gap: 20px;
+        }
+
+        .screenshot-container {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            height: 600px;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+        }
+
+        .screenshot {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            transition: opacity 0.3s ease, transform 0.2s ease;
+            transform-style: preserve-3d;
+        }
+
+        .screenshot.hidden {
+            opacity: 0;
+        }
+
+        .feature {
+            width: 250px;
+            padding: 15px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid rgba(37, 39, 59, 0.10);
+            /* subtle border with opacity */
+            box-shadow: 0 2px 8px rgba(37, 39, 59, 0.06);
+            /* softer shadow with brand color at low opacity */
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s;
+        }
+
+        .feature:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 39, 59, 0.10);
+            /* slightly stronger shadow on hover */
+            border-color: rgba(37, 39, 59, 0.16);
+            /* slightly more visible border on hover */
+        }
+
+        .feature h3 {
+            margin: 0 0 8px 0;
+            color: var(--text-color);
+            font-size: 1.1em;
+        }
+
+        .feature p {
+            margin: 0;
+            color: var(--secondary-text);
+            font-size: 0.85em;
+            line-height: 1.4;
+        }
+
+        .left-features,
+        .right-features {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-height: 600px;
+        }
+
+        .footer-links a {
+            color: var(--secondary-text);
+            font-size: 0.8rem;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 10px;
+                min-height: auto;
+            }
+
+            .screenshot-container {
+                height: 400px;
+                margin: 1rem 0;
+            }
+
+            .left-features,
+            .right-features {
+                max-height: none;
+                width: 100%;
+                align-items: center;
+            }
+
+            .feature {
+                width: 100%;
+                max-width: 300px;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <img src="logo.png" alt="Today Logo" class="logo header-logo">
+            <div class="header-center">
+                <h1 class="app-name">Today</h1>
+                <div class="app-subtitle">Simple Day Planner</div>
+            </div>
+            <a href="https://apps.apple.com/us/app/today-simple-day-planner/id6738060398" class="download-btn"
+                id="open-modal-btn">
+                <span class="mr-1.5"></span>
+                Download
+            </a>
+        </div>
+    </header>
+
+    <!-- Modal for QR code -->
+    <div class="qr-modal" id="qr-modal">
+        <div class="qr-modal-content">
+            <button class="qr-modal-close" id="qr-modal-close" aria-label="Close">&times;</button>
+            <h2>Get Today Planner for iPhone</h2>
+            <p>Scan the QR code to open the App Store</p>
+            <img src="qrcode.svg" alt="Download Today App" width="180" height="180"
+                style="background:white;padding:12px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+            <div style="margin-top: 1.2rem;">
+                <a href="https://apps.apple.com/us/app/today-simple-day-planner/id6738060398" target="_blank"
+                    rel="noopener" style="color: #111; font-weight: 500; text-decoration: underline;">
+                    Open in App Store
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="left-features">
+            <div class="feature" data-screenshot="screenshot1.png" data-alt="Plan Your Day Easily">
+                <h3>Plan Your Day Easily</h3>
+                <p>Intuitive interface for seamless day planning and organization.</p>
+            </div>
+            <div class="feature" data-screenshot="screenshot2.png" data-alt="Add Multiple Calendars">
+                <h3>Add Multiple Calendars</h3>
+                <p>Keep work, personal, and family schedules in one place.</p>
+            </div>
+            <div class="feature" data-screenshot="screenshot3.png" data-alt="View Reminders On Your Day">
+                <h3>View Reminders On Your Day</h3>
+                <p>Never miss important events with smart notifications.</p>
+            </div>
+            <div class="feature" data-screenshot="screenshot4.png" data-alt="Countdown to Moments">
+                <h3>Countdown to Moments</h3>
+                <p>Track time until your special events and milestones.</p>
+            </div>
+        </div>
+
+        <div class="screenshot-container">
+            <img src="screenshot.png" alt="Today App Screenshot" class="screenshot" id="main-screenshot" />
+            <img src="screenshot1.png" alt="Plan Your Day Easily" class="screenshot hidden" id="screenshot1" />
+            <img src="screenshot2.png" alt="Add Multiple Calendars" class="screenshot hidden" id="screenshot2" />
+            <img src="screenshot3.png" alt="View Reminders On Your Day" class="screenshot hidden" id="screenshot3" />
+            <img src="screenshot4.png" alt="Countdown to Moments" class="screenshot hidden" id="screenshot4" />
+            <img src="screenshot5.png" alt="Highlight What Matters" class="screenshot hidden" id="screenshot5" />
+            <img src="screenshot6.png" alt="Make Each Day Unique" class="screenshot hidden" id="screenshot6" />
+            <img src="screenshot7.png" alt="Focus Mode" class="screenshot hidden" id="screenshot7" />
+            <img src="screenshot8.png" alt="Reflect & Celebrate" class="screenshot hidden" id="screenshot8" />
+        </div>
+
+        <div class="right-features">
+            <div class="feature" data-screenshot="screenshot5.png" data-alt="Highlight What Matters">
+                <h3>Highlight What Matters</h3>
+                <p>Focus on your most important events and tasks.</p>
+            </div>
+            <div class="feature" data-screenshot="screenshot6.png" data-alt="Make Each Day Unique">
+                <h3>Make Each Day Unique</h3>
+                <p>Customize your calendar to match your style.</p>
+            </div>
+            <div class="feature" data-screenshot="screenshot7.png" data-alt="Focus Mode">
+                <h3>Focus Mode</h3>
+                <p>Stay productive with distraction-free calendar view.</p>
+            </div>
+            <div class="feature" data-screenshot="screenshot8.png" data-alt="Reflect & Celebrate">
+                <h3>Reflect & Celebrate</h3>
+                <p>Capture thoughts and celebrate special moments.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // QR Code Modal
+            // Modal QR code logic
+            const openModalBtn = document.getElementById('open-modal-btn');
+            const qrModal = document.getElementById('qr-modal');
+            const qrModalClose = document.getElementById('qr-modal-close');
+
+            function shouldOpenModal() {
+                return window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+            }
+
+            openModalBtn.addEventListener('click', function (e) {
+                if (shouldOpenModal()) {
+                    e.preventDefault();
+                    qrModal.classList.add('active');
+                }
+            });
+
+            qrModalClose.addEventListener('click', function () {
+                qrModal.classList.remove('active');
+            });
+
+            qrModal.addEventListener('click', function (e) {
+                if (e.target === qrModal) {
+                    qrModal.classList.remove('active');
+                }
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && qrModal.classList.contains('active')) {
+                    qrModal.classList.remove('active');
+                }
+            });
+
+            // Screenshot hover logic
+            const features = document.querySelectorAll('.feature');
+            const mainScreenshot = document.getElementById('main-screenshot');
+            const screenshots = {
+                'screenshot1.png': document.getElementById('screenshot1'),
+                'screenshot2.png': document.getElementById('screenshot2'),
+                'screenshot3.png': document.getElementById('screenshot3'),
+                'screenshot4.png': document.getElementById('screenshot4'),
+                'screenshot5.png': document.getElementById('screenshot5'),
+                'screenshot6.png': document.getElementById('screenshot6'),
+                'screenshot7.png': document.getElementById('screenshot7'),
+                'screenshot8.png': document.getElementById('screenshot8')
+            };
+
+            let timeoutId = null;
+
+            function showScreenshot(screenshotSrc, altText) {
+                // Clear any existing timeout
+                if (timeoutId) {
+                    clearTimeout(timeoutId);
+                }
+
+                // Hide all screenshots except the target
+                Object.values(screenshots).forEach(screenshot => {
+                    screenshot.classList.add('hidden');
+                });
+                mainScreenshot.classList.add('hidden');
+
+                // Show the target screenshot
+                screenshots[screenshotSrc].classList.remove('hidden');
+                screenshots[screenshotSrc].alt = altText;
+            }
+
+            function showMainScreenshot() {
+                // Clear any existing timeout
+                if (timeoutId) {
+                    clearTimeout(timeoutId);
+                }
+
+                // Set a timeout to show main screenshot
+                timeoutId = setTimeout(() => {
+                    Object.values(screenshots).forEach(screenshot => {
+                        screenshot.classList.add('hidden');
+                    });
+                    mainScreenshot.classList.remove('hidden');
+                }, 5000); // Wait 5 seconds before showing main screenshot
+            }
+
+            features.forEach(feature => {
+                feature.addEventListener('mouseenter', function () {
+                    const screenshotSrc = this.dataset.screenshot;
+                    const altText = this.dataset.alt;
+                    showScreenshot(screenshotSrc, altText);
+                });
+
+                feature.addEventListener('mouseleave', function () {
+                    showMainScreenshot();
+                });
+
+                feature.addEventListener('touchstart', function () {
+                    const screenshotSrc = this.dataset.screenshot;
+                    const altText = this.dataset.alt;
+                    showScreenshot(screenshotSrc, altText);
+                });
+
+                feature.addEventListener('touchend', function () {
+                    showMainScreenshot();
+                });
+            });
+
+            // Add mouse move handling for tilt effect
+            const screenshotContainer = document.querySelector('.screenshot-container');
+
+            function handleMouseMove(e) {
+                const w = window.innerWidth;
+                const h = window.innerHeight;
+                const x = e.clientX;
+                const y = e.clientY;
+
+                // Calculate rotation relative to center of viewport
+                const rotateX = ((y - h / 2) / h) * -6; // max 6deg up/down
+                const rotateY = ((x - w / 2) / w) * 12; // max 12deg left/right
+
+                const screenshots = document.querySelectorAll('.screenshot');
+                screenshots.forEach(screenshot => {
+                    screenshot.style.transform = `translateY(-50%) perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                });
+            }
+
+            function handleMouseLeave() {
+                const screenshots = document.querySelectorAll('.screenshot');
+                screenshots.forEach(screenshot => {
+                    screenshot.style.transform = 'translateY(-50%)';
+                });
+            }
+
+            document.addEventListener('mousemove', handleMouseMove);
+            document.addEventListener('mouseleave', handleMouseLeave);
+        });
+    </script>
+</body>
+
+</html>
